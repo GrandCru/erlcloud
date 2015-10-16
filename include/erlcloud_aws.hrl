@@ -23,6 +23,7 @@
           ddb_host="dynamodb.us-east-1.amazonaws.com"::string(),
           ddb_port=80::non_neg_integer(),
           ddb_retry=fun erlcloud_ddb_impl:retry/1::erlcloud_ddb_impl:retry_fun(),
+          ddb_initial_timeout=1000::non_neg_integer(),
           ddb_streams_scheme="https://"::string(),
           ddb_streams_host="streams.dynamodb.us-east-1.amazonaws.com"::string(),
           ddb_streams_port=80::non_neg_integer(),
